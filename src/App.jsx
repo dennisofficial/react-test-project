@@ -6,6 +6,10 @@ import { Navbar } from "components/Navbar";
 import { Create } from "pages/Create";
 import { Home } from "pages/Home";
 
+import "./styles/global.scss";
+import "./styles/models.scss";
+import "./styles/normalize.css";
+
 const App = () => {
     return (
         <Router>
