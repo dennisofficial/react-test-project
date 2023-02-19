@@ -1,68 +1,13 @@
 .navbar-wrapper {
-    height: 70px;
     background-color: #fff;
     border-bottom: var(--light-accent) 1px solid;
     box-shadow: var(--light-accent) 0px 1px 5px 0px;
 
-    .navbar {
+    .navbar-header {
+        height: 70px;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        .brand {
-            display: inline-block;
-            i {
-                font-size: 32px;
-            }
-            span {
-                font-size: 30px;
-                margin-left: 10px;
-            }
-        }
-
-        .search {
-            position: relative;
-            display: inline-block;
-
-            i {
-                position: absolute;
-                font-size: 14px;
-
-                left: 10px;
-                top: 50%;
-                transform: translateY(-50%);
-                color: var(--dark-accent);
-            }
-
-            input {
-                all: unset;
-
-                border: var(--medium-accent) 1px solid;
-                border-radius: 5px;
-
-                height: 30px;
-                width: 500px;
-
-                padding-left: 30px;
-
-                &::placeholder {
-                    font-style: italic;
-                    color: var(--medium-accent);
-                }
-            }
-        }
-
-        .account {
-            height: inherit;
-
-            span {
-                font-size: 1.5rem;
-                padding-right: 10px;
-            }
-
-            i {
-                font-size: 2rem;
-            }
-        }
     }
 }
