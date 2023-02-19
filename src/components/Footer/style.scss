@@ -1,0 +1,33 @@
+.footer-wrapper {
+    background-color: var(--light-accent);
+
+    width: 100%;
+    height: var(--footer-height);
+
+    position: absolute;
+    bottom: 0px;
+
+    .footer {
+        display: flex;
+        align-items: center;
+        height: inherit;
+
+        .copyright {
+            width: max-content;
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+
+            color: var(--medium-accent);
+
+            span {
+                padding-right: 5px;
+            }
+
+            i {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
