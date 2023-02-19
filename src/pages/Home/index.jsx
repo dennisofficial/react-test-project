@@ -1,7 +1,13 @@
+import { BlogList } from "./components/BlogList";
+
+import "./styles.scss";
+
 const Home = () => {
     return (
         <div className="home-wrapper">
-            <h1>This is a test</h1>
+            <div className="container">
+                <BlogList />
+            </div>
         </div>
     );
 };
