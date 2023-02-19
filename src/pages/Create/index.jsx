@@ -1,7 +1,9 @@
 const Create = () => {
     return (
         <div className="create-wrapper">
-            <h1>Create works!</h1>
+            <div className="container">
+                <h1 className="product-item">Add new Blog</h1>
+            </div>
         </div>
     );
 };
