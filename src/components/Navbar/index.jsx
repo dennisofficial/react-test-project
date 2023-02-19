@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 
-import { Create } from "pages/Create";
-import { Home } from "pages/Home";
-
 import "./_account.scss";
 import "./_brand.scss";
 import "./_search.scss";
@@ -28,6 +25,16 @@ const Navbar = () => {
                 <div className="account">
                     <span>Account</span>
                     <i className="bi bi-person-circle"></i>
+                </div>
+            </div>
+            <div className="navbar-navigate-wrapper container-fluid">
+                <div className="navbar-navigate">
+                    <Link className="link" to="/">
+                        Home Page
+                    </Link>
+                    <Link className="link" to="/create">
+                        Add Blog
+                    </Link>
                 </div>
             </div>
         </div>

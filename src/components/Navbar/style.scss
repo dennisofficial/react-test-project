@@ -10,4 +10,30 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    .navbar-navigate-wrapper {
+        background-color: #eee;
+
+        .navbar-navigate {
+            display: inline-block;
+
+            width: 400px;
+
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .link {
+                all: unset;
+                padding: 0.5rem 1.5rem;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: var(--medium-accent);
+                }
+            }
+        }
+    }
 }
