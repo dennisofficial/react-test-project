@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
         <div className="home-wrapper">
-            <div className="container">
+            <div className="blog-list container">
                 {data &&
                     data.map((blog) => (
                         <Link to="">
