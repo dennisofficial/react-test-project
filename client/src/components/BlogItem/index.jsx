@@ -1,5 +1,3 @@
-import "./styles.scss";
-
 const BlogItem = ({ data }) => {
     return (
         <div className="bloglist-wrapper">

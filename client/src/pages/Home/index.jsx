@@ -2,6 +2,7 @@ import { BlogItem } from "components/BlogItem";
 import { useFetch } from "hooks/useFetch";
 
 import { Link } from "react-router-dom";
+import "./_blogItem.scss";
 import "./styles.scss";
 
 const Home = () => {
