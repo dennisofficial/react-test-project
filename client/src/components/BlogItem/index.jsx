@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./styles.scss";
 
-const BlogList = ({ data }) => {
+const BlogItem = ({ data }) => {
     return (
         <div className="bloglist-wrapper">
             <Link to={`blogs/${data.id}`}>
@@ -17,4 +17,4 @@ const BlogList = ({ data }) => {
     );
 };
 
-export { BlogList };
+export { BlogItem };

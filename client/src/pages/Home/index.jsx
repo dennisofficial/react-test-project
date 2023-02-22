@@ -1,4 +1,4 @@
-import { BlogList } from "components/BlogList";
+import { BlogItem } from "components/BlogItem";
 import { useFetch } from "hooks/useFetch";
 
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ const Home = () => {
                 {data &&
                     data.map((blog) => (
                         <Link to="">
-                            <BlogList data={data} />
+                            <BlogItem data={blog} />
                         </Link>
                     ))}
                 {isLoading && <p>Loading</p>}
