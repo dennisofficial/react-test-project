@@ -13,11 +13,11 @@ const Home = () => {
         <div className="home-wrapper">
             <div className="container">
                 {data &&
-                    data.map((blog) => {
+                    data.map((blog) => (
                         <Link to="">
                             <BlogList data={data} />
-                        </Link>;
-                    })}
+                        </Link>
+                    ))}
                 {isLoading && <p>Loading</p>}
                 {getError && <p>{getError}</p>}
             </div>
