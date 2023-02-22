@@ -27,6 +27,8 @@ const Blog = () => {
                     <h1>{data.title}</h1>
                 </div>
             )}
+            {isLoading && <div>Loading...</div>}
+            {getError && <div>{getError}</div>}
         </div>
     );
 };
