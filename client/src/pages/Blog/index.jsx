@@ -1,6 +1,7 @@
 import { useFetch } from "hooks/useFetch";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import BlogContainer from "./components/Blog-Container";
 
 const Blog = () => {
     const { blogId } = useParams();
@@ -22,11 +23,7 @@ const Blog = () => {
 
     return (
         <div className="blog-wrapper">
-            {data && (
-                <div className="blog container">
-                    <h1>{data.title}</h1>
-                </div>
-            )}
+            {data && <BlogContainer data={data}></BlogContainer>}
             {isLoading && <div>Loading...</div>}
             {getError && <div>{getError}</div>}
         </div>
