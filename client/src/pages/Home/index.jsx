@@ -15,8 +15,8 @@ const Home = () => {
             <div className="blog-list container">
                 {data &&
                     data.map((blog) => (
-                        <Link to="">
-                            <BlogItem data={blog} />
+                        <Link to={`blogs/${blog.id}`}>
+                            <BlogItem data={blog} key={blog.id} />
                         </Link>
                     ))}
                 {isLoading && <p>Loading</p>}
