@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./_account.scss";
 import "./_brand.scss";
@@ -29,12 +29,12 @@ const Navbar = () => {
             </div>
             <div className="navbar-navigate-wrapper container-fluid">
                 <div className="navbar-navigate">
-                    <Link className="link" to="/">
+                    <NavLink className="link" to="/">
                         Home Page
-                    </Link>
-                    <Link className="link" to="/create">
+                    </NavLink>
+                    <NavLink className="link" to="/create">
                         Add Blog
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
         </div>
