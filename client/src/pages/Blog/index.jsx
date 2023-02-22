@@ -45,8 +45,8 @@ const Blog = () => {
             <div className="blog-side-list">
                 {dataList &&
                     dataList.map((blog) => (
-                        <Link to={`blogs/${blog.id}`}>
-                            <BlogItem data={dataMain} key={blog.id}></BlogItem>
+                        <Link to={`/blogs/${blog.id}`}>
+                            <BlogItem data={blog} key={blog.id}></BlogItem>
                         </Link>
                     ))}
                 {loadingList && <div>Loading...</div>}

@@ -29,7 +29,6 @@
                 --x-padding: 1.5rem;
 
                 all: unset;
-                cursor: pointer;
 
                 position: relative;
 
@@ -53,7 +52,15 @@
                     transition: width 100ms ease-in-out;
                 }
 
-                &:hover::after {
+                &:not(.active) {
+                    cursor: pointer;
+
+                    &:hover::after {
+                        width: calc(100% - var(--x-padding));
+                    }
+                }
+
+                &.active::after {
                     width: calc(100% - var(--x-padding));
                 }
             }
