@@ -1,0 +1,45 @@
+.blog-item {
+    padding: 15px;
+    margin: 10px;
+
+    clear: both;
+
+    border-radius: 0.5rem var(--light-accent);
+    box-shadow: 0 0 20px -10px var(--medium-accent);
+    background-color: white;
+
+    transition: transform 50ms linear;
+    transform: scale(1);
+
+    &:hover {
+        transform: scale(1.025);
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: minmax(auto, 100%) auto;
+
+        border-bottom: 2px solid var(--medium-accent);
+        padding-bottom: 0.25rem;
+        margin-bottom: 1rem;
+
+        .title {
+            font-size: 2rem;
+        }
+
+        span {
+            color: var(--medium-accent);
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+    }
+
+    .content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
+}

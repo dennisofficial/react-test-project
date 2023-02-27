@@ -1,0 +1,28 @@
+.blog-item {
+    margin: 2rem 0;
+
+    .header {
+        border-bottom: 2px solid var(--medium-accent);
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.25rem;
+
+        .title {
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .author {
+            font-size: 0.8rem;
+        }
+    }
+
+    .content {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}

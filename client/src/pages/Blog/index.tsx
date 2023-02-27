@@ -4,7 +4,9 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 
 import { BlogItem } from "components/BlogItem";
 
-import "./styles.scss";
+import blogMainStyles from "./_blogmain.module.scss";
+import blogSideStyles from "./_blogside.module.scss";
+import styles from "./styles.module.scss";
 
 const Blog = () => {
     const { blogId } = useParams();
@@ -33,20 +35,27 @@ const Blog = () => {
     }
 
     return (
-        <div className="blog-wrapper container">
-            <div className="blog-main">
-                {dataMain && <BlogItem data={dataMain}></BlogItem>}
+        <div className={`container ${styles["blog-wrapper"]}`}>
+            <div className={styles["blog-main"]}>
+                {dataMain && (
+                    <BlogItem
+                        data={dataMain}
+                        styles={blogMainStyles}></BlogItem>
+                )}
                 {loadingMain && <div>Loading...</div>}
                 {errorMain && <div>{errorMain}</div>}
             </div>
 
             <div></div>
 
-            <div className="blog-side-list">
+            <div className={styles["blog-side-list"]}>
                 {dataList &&
                     dataList.map((blog) => (
                         <Link to={`/blogs/${blog.id}`}>
-                            <BlogItem data={blog} key={blog.id}></BlogItem>
+                            <BlogItem
+                                data={blog}
+                                key={blog.id}
+                                styles={blogSideStyles}></BlogItem>
                         </Link>
                     ))}
                 {loadingList && <div>Loading...</div>}

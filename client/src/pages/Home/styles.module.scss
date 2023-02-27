@@ -1,0 +1,17 @@
+.blog-list {
+    position: relative;
+
+    padding: 15px 0px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    a {
+        all: unset;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
