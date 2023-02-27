@@ -1,38 +1,41 @@
 import { NavLink } from "react-router-dom";
 
-import "./_account.scss";
-import "./_brand.scss";
-import "./_search.scss";
-import "./style.scss";
+import accountStyles from "./_account.module.scss";
+import brandStyles from "./_brand.module.scss";
+import searchStyles from "./_search.module.scss";
+import styles from "./style.module.scss";
 
 const Navbar = () => {
     return (
-        <div className="navbar-wrapper">
-            <div className="navbar-header container">
-                <div className="brand">
+        <div className={styles["navbar-wrapper"]}>
+            <div className={`container ${styles["navbar-header"]}`}>
+                <div className={brandStyles["brand"]}>
                     <i className="bi bi-amd"></i>
                     <span>AMD</span>
                 </div>
-                <div className="search">
-                    <i className="bi bi-search"></i>
+                <div className={searchStyles["search"]}>
+                    <i className={`bi bi-search ${searchStyles["i"]}`}></i>
                     <input
+                        className={searchStyles["input"]}
                         type="text"
                         name="query"
                         id="search-bar"
                         placeholder="search..."
                     />
                 </div>
-                <div className="account">
+                <div className={accountStyles["account"]}>
                     <span>Account</span>
-                    <i className="bi bi-person-circle"></i>
+                    <i
+                        className={`bi bi-person-circle ${accountStyles["i"]}`}></i>
                 </div>
             </div>
-            <div className="navbar-navigate-wrapper container-fluid">
-                <div className="navbar-navigate">
-                    <NavLink className="link" to="/">
+            <div
+                className={`container-fluid ${styles["navbar-navigate-wrapper"]}`}>
+                <div className={styles["navbar-navigate"]}>
+                    <NavLink className={styles["link"]} to="/">
                         Home Page
                     </NavLink>
-                    <NavLink className="link" to="/create">
+                    <NavLink className={styles["link"]} to="/create">
                         Add Blog
                     </NavLink>
                 </div>

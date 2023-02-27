@@ -1,0 +1,10 @@
+.blog-item {
+    .title {
+        font-variant: small-caps;
+        text-transform: capitalize;
+
+        border-bottom: 2px solid var(--medium-accent);
+        padding-bottom: 0.25rem;
+        margin-bottom: 1rem;
+    }
+}
