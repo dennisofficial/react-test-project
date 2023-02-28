@@ -1,5 +1,13 @@
 {
-  "tabWidth": 4,
-  "useTabs": false,
-  "bracketSameLine": true
+    "tabWidth": 4,
+    "useTabs": false,
+    "bracketSameLine": true,
+    "overrides": [
+        {
+            "files": ["*.yaml"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
 }
