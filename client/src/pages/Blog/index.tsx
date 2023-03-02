@@ -1,8 +1,8 @@
-import { useFetch } from "hooks/useFetch";
 import { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import { useFetch } from "/src/hooks/useFetch";
 
-import { BlogItem } from "components/BlogItem";
+import { BlogItem } from "/src/components/BlogItem";
 
 import blogMainStyles from "./_blogmain.module.scss";
 import blogSideStyles from "./_blogside.module.scss";

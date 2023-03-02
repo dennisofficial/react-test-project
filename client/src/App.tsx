@@ -1,11 +1,11 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
-import { Footer } from "components/Footer";
-import { Navbar } from "components/Navbar";
+import { Footer } from "/src/components/Footer";
+import { Navbar } from "/src/components/Navbar";
 
-import { Blog } from "pages/Blog";
-import { Create } from "pages/Create";
-import { Home } from "pages/Home";
+import { Blog } from "/src/pages/Blog";
+import { Create } from "/src/pages/Create";
+import { Home } from "/src/pages/Home";
 
 import "./styles/global.scss";
 import "./styles/models.scss";

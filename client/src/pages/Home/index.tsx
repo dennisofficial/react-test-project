@@ -1,5 +1,5 @@
-import { BlogItem } from "components/BlogItem";
-import { useFetch } from "hooks/useFetch";
+import { BlogItem } from "/src/components/BlogItem";
+import { useFetch } from "/src/hooks/useFetch";
 
 import { Link } from "react-router-dom";
 
