@@ -1,0 +1,19 @@
+INSERT INTO `accounts`(`id`, `first_name`, `last_name`, `username`, `password`)
+VALUES(
+    NULL,
+    'Dennis',
+    'Lysenko',
+    'dennislysenko',
+    ''
+),(
+    NULL,
+    'Dmitry',
+    'Lysenko',
+    'frxxdom',
+    ''
+),(
+    NULL,
+    'Elon',
+    'Musk',
+    'flyrockets',
+    '');
