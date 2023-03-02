@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 
 const Home = () => {
     const { data, isLoading, getError } = useFetch(
-        "http://localhost:8000/blogs"
+        "http://localhost:4000/blogs"
     );
 
     return (

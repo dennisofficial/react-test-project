@@ -16,13 +16,13 @@ const Blog = () => {
         data: dataMain,
         isLoading: loadingMain,
         getError: errorMain,
-    } = useFetch(`http://localhost:8000/blogs/${blogId}`);
+    } = useFetch(`http://localhost:4000/blogs/${blogId}`);
 
     const {
         data: dataList,
         isLoading: loadingList,
         getError: errorList,
-    } = useFetch(`http://localhost:8000/blogs`);
+    } = useFetch(`http://localhost:4000/blogs`);
 
     useEffect(() => {
         if (!blogId) {
