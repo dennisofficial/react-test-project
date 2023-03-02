@@ -1,37 +1,3 @@
-use react_test_server;
-
-CREATE TABLE `accounts`(
-    `id` INT(11) NOT NULL AUTO_INCREMENT,
-    `first_name` VARCHAR(32) NOT NULL,
-    `last_name` VARCHAR(32) NOT NULL,
-    `username` VARCHAR(30) NOT NULL,
-    `password` VARCHAR(256) NOT NULL,
-    PRIMARY KEY(`id`)
-) ENGINE = InnoDB;
-
-CREATE TABLE `blogs`(
-    `id` INT(11) NOT NULL AUTO_INCREMENT,
-    `title` VARCHAR(64) NOT NULL,
-    `content` LONGTEXT NOT NULL,
-    `author` INT(11) NOT NULL,
-    PRIMARY KEY(`id`)
-) ENGINE = InnoDB;
-
-INSERT INTO `accounts`(`id`, `first_name`, `last_name`, `username`, `password`)
-VALUES(
-    NULL,
-    'Dennis',
-    'Lysenko',
-    'dennislysenko',
-    ''
-),(
-    NULL,
-    'Dmitry',
-    'Lysenko',
-    'frxxdom',
-    ''
-),(NULL, 'Elon', 'Musk', 'flyrockets', '');
-
 INSERT INTO `blogs`(`id`, `title`, `content`, `author`)
 VALUES(
     NULL,
