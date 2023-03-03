@@ -16,7 +16,7 @@ const useFetch = (url) => {
                 return response.json();
             })
             .then((data) => {
-                setBlogs(data);
+                setBlogs(data.data);
                 setLoading(false);
             })
             .catch((e) => {

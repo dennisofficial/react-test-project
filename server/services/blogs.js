@@ -20,7 +20,7 @@ async function getMultiple() {
 
 async function getSingle(id) {
     const data = await db.query(
-        `SELECT * FROM blogs WHERE ('id' = ${id}) LIMIT 0, 1`
+        `SELECT * FROM blogs WHERE (id = ${id}) LIMIT 0, 1`
     );
     const meta = { page: 1 };
 

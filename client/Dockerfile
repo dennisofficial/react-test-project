@@ -1,5 +1,7 @@
 FROM node:18-alpine
 
+RUN npm install -g nodemon
+
 WORKDIR /client
 
 COPY package.json .

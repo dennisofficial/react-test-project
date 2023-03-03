@@ -15,13 +15,9 @@ const Home = () => {
         <>
             <div className={`container ${styles["blog-list"]}`}>
                 {data &&
-                    data.map((blog) => (
-                        <Link to={`blogs/${blog.id}`}>
-                            <BlogItem
-                                data={blog}
-                                key={blog.id}
-                                styles={blogItemStyles}
-                            />
+                    data.map((blog, key) => (
+                        <Link to={`blogs/${blog.id}`} key={key}>
+                            <BlogItem data={blog} styles={blogItemStyles} />
                         </Link>
                     ))}
                 {isLoading && <p>Loading</p>}

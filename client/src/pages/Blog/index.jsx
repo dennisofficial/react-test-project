@@ -37,11 +37,12 @@ const Blog = () => {
     return (
         <div className={`container ${styles["blog-wrapper"]}`}>
             <div className={styles["blog-main"]}>
-                {dataMain && (
-                    <BlogItem
-                        data={dataMain}
-                        styles={blogMainStyles}></BlogItem>
-                )}
+                {dataMain &&
+                    dataMain.map((blog, key) => (
+                        <BlogItem
+                            data={blog}
+                            styles={blogMainStyles}></BlogItem>
+                    ))}
                 {loadingMain && <div>Loading...</div>}
                 {errorMain && <div>{errorMain}</div>}
             </div>
@@ -50,11 +51,10 @@ const Blog = () => {
 
             <div className={styles["blog-side-list"]}>
                 {dataList &&
-                    dataList.map((blog) => (
-                        <Link to={`/blogs/${blog.id}`}>
+                    dataList.map((blog, key) => (
+                        <Link to={`/blogs/${blog.id}`} key={key}>
                             <BlogItem
                                 data={blog}
-                                key={blog.id}
                                 styles={blogSideStyles}></BlogItem>
                         </Link>
                     ))}

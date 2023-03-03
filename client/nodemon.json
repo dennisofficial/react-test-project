@@ -1,0 +1,4 @@
+{
+    "watch": ["*.*"],
+    "ext": "js, scss, jsx, html, env, json"
+}
