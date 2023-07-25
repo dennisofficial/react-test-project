@@ -14,8 +14,8 @@ jobs:
         uses: actions/setup-node@v3.7.0
         with:
           node-version: '>=10.15.0'
-      - run: cd client/
-      - run:
+      - run: |
+         cd client
          npm i
          npm run build
          npm run test
