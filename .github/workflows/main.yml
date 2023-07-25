@@ -15,9 +15,10 @@ jobs:
         with:
           node-version: '>=10.15.0'
       - run: cd client/
-      - run: npm i
-      - run: npm run build
-      - run: npm run test
+      - run:
+         npm i
+         npm run build
+         npm run test
       
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@v1.0.0
